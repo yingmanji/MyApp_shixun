@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.a0_0.myapp_shixun.MainActivity">
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@+id/tv_main_username"
+        android:text="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+    <RadioGroup
+        android:id="@+id/rg"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <RadioButton
+            android:checked="true"
+            android:textColor="@drawable/text_color"
+            android:id="@+id/rb_wx"
+            android:drawableTop="@drawable/menu_wx"
+            android:text="微信"
+            style="@style/main_fl_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:textColor="@drawable/text_color"
+            android:id="@+id/rb_tx"
+            android:drawableTop="@drawable/menu_tx"
+            android:text="通讯录"
+            style="@style/main_fl_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:textColor="@drawable/text_color"
+            android:id="@+id/rb_fx"
+            android:drawableTop="@drawable/menu_fx"
+            android:text="发现"
+            style="@style/main_fl_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:textColor="@drawable/text_color"
+            android:id="@+id/rb_wd"
+            android:drawableTop="@drawable/menu_wd"
+            android:text="我的"
+            style="@style/main_fl_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RadioGroup>
+</LinearLayout>
